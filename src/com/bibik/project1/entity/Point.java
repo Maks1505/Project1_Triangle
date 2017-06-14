@@ -1,10 +1,10 @@
 package com.bibik.project1.entity;
 
 public class Point {
-	int x, y;
+	private int x;
+	private int y;
 
 	public Point(int x, int y) {
-		super();
 		this.x = x;
 		this.y = y;
 	}
@@ -24,7 +24,7 @@ public class Point {
 
 	@Override
 	public String toString() {
-		return "Point [x=" + x + ", y=" + y + "]";
+		return "[" + x + ":" + y + "]";
 	}
 	
 }
