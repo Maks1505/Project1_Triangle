@@ -24,7 +24,7 @@ public class Triangle {
 		}
 	}
 	
-	public double calculateLength(Point point1, Point point2) {
+	public double calculateSideLength(Point point1, Point point2) {
 		return Math.hypot(point2.getX()-point1.getX(), point2.getY()-point1.getY());
 	}
 	

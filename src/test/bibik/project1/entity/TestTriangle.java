@@ -26,8 +26,8 @@ public class TestTriangle {
 	
 	
 	@Test
-	public void test() {
+	public void testSideLengthCalculation() {
 		Triangle tr = new Triangle(POINTA, POINTB, POINTC);
-		assertEquals(1.4142135623730951, tr.calculateLength(POINTB, POINTA), 0.0000001);
+		assertEquals(1.4142135623730951, tr.calculateSideLength(POINTB, POINTA), 0.0000001);
 	}
 }
