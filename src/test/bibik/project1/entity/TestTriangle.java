@@ -27,10 +27,7 @@ public class TestTriangle {
 	
 	@Test
 	public void test() {
-		Triangle tr = new Triangle();
-		boolean trResult = tr.createTriangle(POINTA, POINTB, POINTC);
-		
-		fail("Not yet implemented");
+		Triangle tr = new Triangle(POINTA, POINTB, POINTC);
+		assertEquals(1.4142135623730951, tr.calculateLength(POINTB, POINTA), 0.0000001);
 	}
-
 }

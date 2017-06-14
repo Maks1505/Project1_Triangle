@@ -11,18 +11,16 @@ public class Triangle {
 	private Point pointB;
 	private Point pointC;
 	
-	public boolean createTriangle (Point pointA, Point pointB, Point pointC) {
+	public Triangle (Point pointA, Point pointB, Point pointC) {
 		Logger logger = LogManager.getLogger(TestTriangle.class);
 		if (!checkThreePointsLieOnStreightLine(pointA, pointB, pointC)) { 
 			this.pointA = pointA;
 			this.pointB = pointB;
 			this.pointC = pointC;
 			logger.info("New triangle has been created. " + this.toString());
-			return true;
 		} else {
 			logger.warn("Points lie on streight line! Triangle cannot be created.");
-			//System.out.println("Points lie on streight line! Triangle cannot be created");
-			return false;
+			//TROUGH EXCEPTION
 		}
 	}
 	
