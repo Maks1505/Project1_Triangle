@@ -30,4 +30,9 @@ public class TestTriangle {
 		Triangle tr = new Triangle(POINTA, POINTB, POINTC);
 		assertEquals(1.4142135623730951, tr.calculateSideLength(POINTB, POINTA), 0.0000001);
 	}
+	
+	@Test
+	public void testReplacePointACheckObserver() {
+		fail("not implemented yet");
+	}
 }
