@@ -21,20 +21,11 @@ public class TestObserver {
 		Point pointC = new Point(4, 5);
 		
 		Triangle tr = new Triangle(pointA, pointB, pointC);
-		
-		//Как записать Площадь и Периметр в TriangleParameters? Вызвать расчёт из класса или из внешнего кода через Set запушить рассчитанные значения?
 		TriangleParameters trParam = new TriangleParameters();
+		tr.setTriangleParameters(trParam); //trParam is empty
 		tr.registerObserver(trParam);
-		//LOGGER.info("TriangleID: " + tr.getTRIANGLEID().toString());
-		/*
-		TriangleParametersCalculation trParamCalc = new TriangleParametersCalculation();
-		trParam.setArea(trParamCalc.calculateTriangleArea(tr));
-		trParam.setPerimeter(trParamCalc.calculateTrianglePerimeter(tr));
-		*/
-		LOGGER.info("New triangle has: " + trParam.toString());
-		tr.updatePointA(new Point(1,1));
-		LOGGER.info("Updated triangle has: " + trParam.toString());
-		fail("not implemented yet");
+		tr.updatePointA(new Point(1,1)); //this should trigger update of trParam object
+		assertEquals(0.9999999999999988, tr.getTriangleParameters().getArea(), 0.00000001);
 	}
 	
 }

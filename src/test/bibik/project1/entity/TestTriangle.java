@@ -12,23 +12,31 @@ import com.bibik.project1.entity.Triangle;
 
 public class TestTriangle {
 	private static Logger LOGGER = LogManager.getLogger(TestTriangle.class);
-	private static Point POINTA;
-	private static Point POINTB;
-	private static Point POINTC;
 
 	@BeforeClass 
 	public static void testDataSet() {
 		LOGGER.info("LET'S GIVE IT ANOTHER TRY!");
-		POINTA = new Point(2, 2);
-		POINTB = new Point(3, 3);
-		POINTC = new Point(4, 5);
 	}
 	
 	@Test
 	public void testSideLengthCalculation() {
-		Triangle tr = new Triangle(POINTA, POINTB, POINTC);
-		assertEquals(1.4142135623730951, tr.calculateSideLength(POINTB, POINTA), 0.0000001);
+		Point pointA = new Point(2, 2);
+		Point pointB = new Point(3, 3);
+		Point pointC = new Point(4, 5);
+		Triangle tr = new Triangle(pointA, pointB, pointC);
+		assertEquals(1.4142135623730951, tr.calculateSideLength(pointB, pointA), 0.00000001);
 	}
-	
 
+	// HOW TO TEST PRIVATE METHODS?
+/*
+	@Test
+	public void testThreePointsLieOnStraightLine() {
+		Point pointA = new Point(2, 2);
+		Point pointB = new Point(3, 3);
+		Point pointC = new Point(4, 4);
+		Triangle tr = new Triangle(pointA, pointB, pointC);
+		assertTrue(tr.checkThreePointsLieOnStraightLine(pointA, pointB, pointC));
+	}
+*/
+	
 }

@@ -1,6 +1,58 @@
-2017-06-15 18:07:46 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
-2017-06-15 18:07:46 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
-2017-06-15 18:07:46 [main] INFO  test.bibik.project1.observer.TestObserver - TriangleID: dbb46fd4-7837-46c7-b9a2-e0d756209ab0
-2017-06-15 18:07:46 [main] INFO  test.bibik.project1.observer.TestObserver - New triangle has: Area=0.0, Perimeter=0.0
-2017-06-15 18:07:46 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
-2017-06-15 18:07:46 [main] INFO  test.bibik.project1.observer.TestObserver - Updated triangle has: Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:18:49 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:18:49 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:18:49 [main] INFO  test.bibik.project1.observer.TestObserver - New triangle has: Area=0.0, Perimeter=0.0
+2017-06-15 20:18:49 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-15 20:18:49 [main] INFO  test.bibik.project1.observer.TestObserver - Updated trParam: Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:19:33 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:19:33 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:19:33 [main] INFO  test.bibik.project1.observer.TestObserver - New triangle has: Area=0.0, Perimeter=0.0
+2017-06-15 20:19:33 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-15 20:19:33 [main] INFO  test.bibik.project1.observer.TestObserver - Updated trParam: Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:19:33 [main] INFO  test.bibik.project1.observer.TestObserver - Updated triangle has: Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:20:26 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:20:26 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:20:26 [main] INFO  test.bibik.project1.observer.TestObserver - Updated triangle has: Area=0.0, Perimeter=0.0
+2017-06-15 20:20:26 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-15 20:20:26 [main] INFO  test.bibik.project1.observer.TestObserver - Updated triangle has: Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:24:36 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:27:13 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:27:13 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:27:13 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5], Area=0.0, Perimeter=0.0
+2017-06-15 20:28:56 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:28:56 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:28:56 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5], Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:28:56 [main] INFO  test.bibik.project1.observer.TestObserver - Updated triangle has: Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:29:25 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:29:25 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:29:25 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-15 20:29:25 [main] INFO  test.bibik.project1.observer.TestObserver - Updated triangle has: Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:29:53 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:29:53 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:29:53 [main] INFO  test.bibik.project1.observer.TestObserver - New triangle has: Area=0.0, Perimeter=0.0
+2017-06-15 20:29:53 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-15 20:29:53 [main] INFO  test.bibik.project1.observer.TestObserver - Updated triangle has: Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:31:05 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:31:05 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:31:05 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-15 20:31:05 [main] INFO  test.bibik.project1.observer.TestObserver - Triagnle's parameters recalculated: Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:33:12 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:33:12 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:33:12 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-15 20:33:12 [main] INFO  test.bibik.project1.observer.TestObserver - Triagnle's parameters recalculated: Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:36:49 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:36:49 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:36:49 [main] INFO  com.bibik.project1.entity.TriangleParameters - Area and Perimeter have been updated. Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:36:49 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-15 20:38:05 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:38:05 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:38:05 [main] INFO  com.bibik.project1.entity.TriangleParameters - Area and Perimeter have been updated. Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:38:05 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-15 20:39:06 [main] INFO  test.bibik.project1.observer.TestObserver - Test observer
+2017-06-15 20:39:06 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:39:06 [main] INFO  com.bibik.project1.entity.Triangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-15 20:39:06 [main] INFO  com.bibik.project1.entity.TriangleParameters - Area and Perimeter have been updated. Area=0.9999999999999988, Perimeter=10.06449510224598
+2017-06-15 20:39:35 [main] INFO  test.bibik.project1.entity.TestTriangle - LET'S GIVE IT ANOTHER TRY!
+2017-06-15 20:39:35 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]
+2017-06-15 20:51:46 [main] INFO  test.bibik.project1.entity.TestTriangle - LET'S GIVE IT ANOTHER TRY!
+2017-06-15 20:51:46 [main] WARN  com.bibik.project1.entity.Triangle - Points lie on streight line! Triangle cannot be created.
+2017-06-15 20:51:46 [main] INFO  com.bibik.project1.entity.Triangle - New triangle has been created. Triangle: PointA [2:2], PointB [3:3], PointC [4:5]

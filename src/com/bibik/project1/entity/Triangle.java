@@ -1,7 +1,6 @@
 package com.bibik.project1.entity;
 
 import java.util.LinkedList;
-import java.util.UUID;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -11,11 +10,11 @@ import com.bibik.project1.observer.base.Observable;
 import com.bibik.project1.observer.base.Observer;
 
 public class Triangle implements Observable {
-	private static final UUID TRIANGLEID = java.util.UUID.randomUUID();
 	private List<Observer> observers;
 	private Point pointA;
 	private Point pointB;
 	private Point pointC;
+	private TriangleParameters triangleParameters;
 	
 	public Triangle (Point pointA, Point pointB, Point pointC) {
 		Logger logger = LogManager.getLogger(Triangle.class);
@@ -35,7 +34,7 @@ public class Triangle implements Observable {
 		return Math.hypot(point2.getX()-point1.getX(), point2.getY()-point1.getY());
 	}
 	
-	private boolean checkThreePointsLieOnStraightLine(Point pointA, Point pointB, Point pointC) {
+	public boolean checkThreePointsLieOnStraightLine(Point pointA, Point pointB, Point pointC) {
 		if (((pointC.getX() - pointA.getX()) / (pointB.getX() - pointA.getX())) == ((pointC.getY() - pointA.getY()) / (pointB.getY() - pointA.getY())))
 				return true;
 		else return false;
@@ -53,8 +52,12 @@ public class Triangle implements Observable {
 		return pointC;
 	}
 
-	public static UUID getTRIANGLEID() {
-		return TRIANGLEID;
+	public TriangleParameters getTriangleParameters() {
+		return triangleParameters;
+	}
+
+	public void setTriangleParameters(TriangleParameters triangleParameters) {
+		this.triangleParameters = triangleParameters;
 	}
 
 	public void updatePointA(Point pointA) {
