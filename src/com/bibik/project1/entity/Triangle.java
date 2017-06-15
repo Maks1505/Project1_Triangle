@@ -1,6 +1,7 @@
 package com.bibik.project1.entity;
 
 import java.util.LinkedList;
+import java.util.UUID;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -10,6 +11,7 @@ import com.bibik.project1.observer.base.Observable;
 import com.bibik.project1.observer.base.Observer;
 
 public class Triangle implements Observable {
+	private static final UUID TRIANGLEID = java.util.UUID.randomUUID();
 	private List<Observer> observers;
 	private Point pointA;
 	private Point pointB;
@@ -51,11 +53,16 @@ public class Triangle implements Observable {
 		return pointC;
 	}
 
+	public static UUID getTRIANGLEID() {
+		return TRIANGLEID;
+	}
+
 	public void updatePointA(Point pointA) {
 		Logger logger = LogManager.getLogger(Triangle.class);
 		if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.  
 			this.pointA = pointA; 
 			logger.info("The triangle has been updated. " + this.toString());
+			notifyObservers();
 		} else {
 			logger.warn("Points lie on streight line! Triangle cannot be updated.");
 			//TROUGH EXCEPTION
@@ -67,6 +74,7 @@ public class Triangle implements Observable {
 			if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.
 				this.pointB = pointB;
 				logger.info("The triangle has been updated. " + this.toString());
+				notifyObservers();
 			} else {
 				logger.warn("Points lie on streight line! Triangle cannot be updated.");
 				//TROUGH EXCEPTION
@@ -78,6 +86,7 @@ public class Triangle implements Observable {
 		if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.
 			this.pointC = pointC;
 			logger.info("The triangle has been updated. " + this.toString());
+			notifyObservers();
 		} else {
 			logger.warn("Points lie on streight line! Triangle cannot be updated.");
 			//TROUGH EXCEPTION
