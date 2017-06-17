@@ -7,11 +7,14 @@ import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.bibik.project1.entity.GeometricalFigure;
 import com.bibik.project1.entity.Point;
 import com.bibik.project1.entity.Triangle;
+import com.bibik.project1.factory.GeometricalFigureFactory;
 
 public class TestTriangle {
-	private static Logger LOGGER = LogManager.getLogger(TestTriangle.class);
+	private static final Logger LOGGER = LogManager.getLogger();
+	
 
 	@BeforeClass 
 	public static void testDataSet() {
@@ -30,11 +33,14 @@ public class TestTriangle {
 	// HOW TO TEST PRIVATE METHODS?
 /*
 	@Test
-	public void testThreePointsLieOnStraightLine() {
+	public void test1() {
+		GeometricalFigureFactory factory = new GeometricalFigureFactory();
+		GeometricalFigure tr = factory.getGeometricalFigureFromFactory("TRIANGLE");
+		tr.se
 		Point pointA = new Point(2, 2);
 		Point pointB = new Point(3, 3);
 		Point pointC = new Point(4, 4);
-		Triangle tr = new Triangle(pointA, pointB, pointC);
+;
 		assertTrue(tr.checkThreePointsLieOnStraightLine(pointA, pointB, pointC));
 	}
 */

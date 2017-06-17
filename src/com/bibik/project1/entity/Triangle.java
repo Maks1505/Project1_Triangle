@@ -9,7 +9,8 @@ import org.apache.logging.log4j.Logger;
 import com.bibik.project1.observer.base.Observable;
 import com.bibik.project1.observer.base.Observer;
 
-public class Triangle implements Observable {
+public class Triangle extends GeometricalFigure implements Observable {
+	private Logger logger = LogManager.getLogger();
 	private List<Observer> observers;
 	private Point pointA;
 	private Point pointB;
@@ -17,19 +18,22 @@ public class Triangle implements Observable {
 	private TriangleParameters triangleParameters;
 	
 	public Triangle (Point pointA, Point pointB, Point pointC) {
-		Logger logger = LogManager.getLogger(Triangle.class);
 		observers = new LinkedList<>();
 		if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { 
 			this.pointA = pointA;
 			this.pointB = pointB;
 			this.pointC = pointC;
-			logger.info("New triangle has been created. " + this.toString());
+			//logger.info("New triangle has been created. " + this.toString());
 		} else {
-			logger.warn("Points lie on streight line! Triangle cannot be created.");
+			//logger.warn("Points lie on streight line! Triangle cannot be created.");
 			//TROUGH EXCEPTION
 		}
 	}
 	
+	public Triangle() {
+		// Used to create empty object via Factory. Use other methods to check data and set fields.  
+	}
+
 	public double calculateSideLength(Point point1, Point point2) {
 		return Math.hypot(point2.getX()-point1.getX(), point2.getY()-point1.getY());
 	}
@@ -61,7 +65,6 @@ public class Triangle implements Observable {
 	}
 
 	public void updatePointA(Point pointA) {
-		Logger logger = LogManager.getLogger(Triangle.class);
 		if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.  
 			this.pointA = pointA; 
 			logger.info("The triangle has been updated. " + this.toString());
@@ -73,7 +76,6 @@ public class Triangle implements Observable {
 	}
 
 	public void updatePointB(Point pointB) {
-			Logger logger = LogManager.getLogger(Triangle.class);
 			if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.
 				this.pointB = pointB;
 				logger.info("The triangle has been updated. " + this.toString());
@@ -85,7 +87,6 @@ public class Triangle implements Observable {
 	}
 
 	public void updatePointC(Point pointC) {
-		Logger logger = LogManager.getLogger(Triangle.class);
 		if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.
 			this.pointC = pointC;
 			logger.info("The triangle has been updated. " + this.toString());
