@@ -1,7 +1,5 @@
 package com.bibik.project1.entity;
 
 public abstract class GeometricalFigure {
-	public void createTriangle() {
-		
-	}
+	public abstract GeometricalFigure createFigure(Point pointA, Point pointB, Point pointC);
 }

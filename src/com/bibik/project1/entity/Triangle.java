@@ -10,7 +10,7 @@ import com.bibik.project1.observer.base.Observable;
 import com.bibik.project1.observer.base.Observer;
 import com.bibik.project1.validation.DataValidation;
 
-public class Triangle extends GeometricalFigure implements Observable {
+public class Triangle /*extends GeometricalFigure */ implements Observable {
 	private Logger logger = LogManager.getLogger();
 	private List<Observer> observers;
 	private Point pointA;
@@ -31,9 +31,6 @@ public class Triangle extends GeometricalFigure implements Observable {
 		}
 	}
 	
-	public Triangle() {
-		// Used to create empty object via Factory. Use other methods to check data and set fields.  
-	}
 
 	public Point getPointA() {
 		return pointA;
