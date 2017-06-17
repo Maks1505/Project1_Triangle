@@ -8,12 +8,13 @@
     <PatternLayout pattern="${pattern}"/>
    </Console>
             <RollingFile name="File" fileName="logs/log.txt" append="true"
-                         filePattern = "logs/$${date:yyyy-MM}/log-%d{yyyy-MM-dd-HH}.txt">
+                         filePattern = "logs/log-%i.txt">
                 <PatternLayout pattern="${pattern}"/>
                 <Policies>
                     <TimeBasedTriggeringPolicy/>
                     <SizeBasedTriggeringPolicy size="50 KB"/>
                 </Policies>
+                <DefaultRolloverStrategy max="10"/>
             </RollingFile>
   </Appenders>
   

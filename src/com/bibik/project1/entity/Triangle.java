@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.bibik.project1.observer.base.Observable;
 import com.bibik.project1.observer.base.Observer;
+import com.bibik.project1.validation.DataValidation;
 
 public class Triangle extends GeometricalFigure implements Observable {
 	private Logger logger = LogManager.getLogger();
@@ -19,13 +20,13 @@ public class Triangle extends GeometricalFigure implements Observable {
 	
 	public Triangle (Point pointA, Point pointB, Point pointC) {
 		observers = new LinkedList<>();
-		if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { 
+		if (!DataValidation.checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { 
 			this.pointA = pointA;
 			this.pointB = pointB;
 			this.pointC = pointC;
 			//logger.info("New triangle has been created. " + this.toString());
 		} else {
-			//logger.warn("Points lie on streight line! Triangle cannot be created.");
+			//logger.warn("Points lie on straight line! Triangle cannot be created.");
 			//TROUGH EXCEPTION
 		}
 	}
@@ -34,16 +35,6 @@ public class Triangle extends GeometricalFigure implements Observable {
 		// Used to create empty object via Factory. Use other methods to check data and set fields.  
 	}
 
-	public double calculateSideLength(Point point1, Point point2) {
-		return Math.hypot(point2.getX()-point1.getX(), point2.getY()-point1.getY());
-	}
-	
-	public boolean checkThreePointsLieOnStraightLine(Point pointA, Point pointB, Point pointC) {
-		if (((pointC.getX() - pointA.getX()) / (pointB.getX() - pointA.getX())) == ((pointC.getY() - pointA.getY()) / (pointB.getY() - pointA.getY())))
-				return true;
-		else return false;
-	}
-	
 	public Point getPointA() {
 		return pointA;
 	}
@@ -65,7 +56,7 @@ public class Triangle extends GeometricalFigure implements Observable {
 	}
 
 	public void updatePointA(Point pointA) {
-		if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.  
+		if (!DataValidation.checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.  
 			this.pointA = pointA; 
 			logger.info("The triangle has been updated. " + this.toString());
 			notifyObservers();
@@ -76,7 +67,7 @@ public class Triangle extends GeometricalFigure implements Observable {
 	}
 
 	public void updatePointB(Point pointB) {
-			if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.
+			if (!DataValidation.checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.
 				this.pointB = pointB;
 				logger.info("The triangle has been updated. " + this.toString());
 				notifyObservers();
@@ -87,7 +78,7 @@ public class Triangle extends GeometricalFigure implements Observable {
 	}
 
 	public void updatePointC(Point pointC) {
-		if (!checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.
+		if (!DataValidation.checkThreePointsLieOnStraightLine(pointA, pointB, pointC)) { //Update only if new point does not lie on straight line with two others.
 			this.pointC = pointC;
 			logger.info("The triangle has been updated. " + this.toString());
 			notifyObservers();
