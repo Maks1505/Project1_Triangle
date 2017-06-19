@@ -8,7 +8,7 @@
     <PatternLayout pattern="${pattern}"/>
    </Console>
             <RollingFile name="File" fileName="logs/log.txt" append="true"
-                         filePattern = "logs/log-%i.txt">
+                         filePattern = "logs/$${date:yyyy-MM}/log-%d{MM-dd-yyyy}-%i.txt">
                 <PatternLayout pattern="${pattern}"/>
                 <Policies>
                     <TimeBasedTriggeringPolicy/>
@@ -25,3 +25,5 @@
    </Root>
   </Loggers>
  </Configuration>
+ 
+ 

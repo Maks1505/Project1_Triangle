@@ -7,4 +7,8 @@ public class DataValidation {
 		return ((pointC.getX() - pointA.getX()) / (pointB.getX() - pointA.getX())) == ((pointC.getY() - pointA.getY()) / (pointB.getY() - pointA.getY()));
 	}
 
+	
+	public static boolean checkInputData() {
+		return false;
+	}
 }
