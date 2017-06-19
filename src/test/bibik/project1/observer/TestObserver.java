@@ -2,25 +2,24 @@ package test.bibik.project1.observer;
 
 import static org.junit.Assert.*;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
 import com.bibik.project1.entity.Point;
 import com.bibik.project1.entity.Triangle;
 import com.bibik.project1.entity.TriangleParameters;
+import com.bibik.project1.factory.TriangleFactory;
 
 public class TestObserver {
-	private static Logger LOGGER = LogManager.getLogger(TestObserver.class);
+	//private static Logger LOGGER = LogManager.getLogger(TestObserver.class);
 	
 	@Test
 	public void testObserver() {
-		LOGGER.info("Test observer");
+		//LOGGER.info("Test observer");
 		Point pointA = new Point(2, 2);
 		Point pointB = new Point(3, 3);
 		Point pointC = new Point(4, 5);
 		
-		Triangle tr = new Triangle(pointA, pointB, pointC);
+		Triangle tr = new TriangleFactory().createTriangle("SIMPLE", pointA, pointB, pointC);
 		TriangleParameters trParam = new TriangleParameters();
 		tr.setTriangleParameters(trParam); //trParam is empty
 		tr.registerObserver(trParam);

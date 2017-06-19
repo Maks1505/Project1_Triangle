@@ -7,6 +7,7 @@ import org.junit.Test;
 import com.bibik.project1.action.TriangleParametersCalculation;
 import com.bibik.project1.entity.Point;
 import com.bibik.project1.entity.Triangle;
+import com.bibik.project1.factory.TriangleFactory;
 
 public class TestTriangleParametersCalculation {
 
@@ -17,6 +18,19 @@ public class TestTriangleParametersCalculation {
 		assertEquals(1.4142135623730951, TriangleParametersCalculation.calculateSideLength(pointB, pointA), 0.00000001);
 	}
 	
+	
+	@Test
+	public void testCalculateTriangleArea() {
+		Point pointA = new Point(1, 1);
+		Point pointB = new Point(3, 3);
+		Point pointC = new Point(4, 5);
+		//Triangle tr = new Triangle(pointA, pointB, pointC);
+		Triangle tr = new TriangleFactory().createTriangle("SIMPLE", pointA, pointB, pointC);
+		assertEquals(0.9999999999999988, TriangleParametersCalculation.calculateTriangleArea(tr), 0.00000001);
+	}
+
+	
+	/*
 	@Test
 	public void testCalculateTriangleArea() {
 		Point pointA = new Point(1, 1);
@@ -34,7 +48,7 @@ public class TestTriangleParametersCalculation {
 		Triangle tr = new Triangle(pointA, pointB, pointC);
 		assertEquals(10.06449510224598, TriangleParametersCalculation.calculateTrianglePerimeter(tr), 0.00000001);
 	}
-
+*/
 }
 
 
