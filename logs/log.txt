@@ -82,3 +82,15 @@
 2017-06-26 02:25:30 [main] INFO  test.bibik.project1.maintest.TestMultipleTriangleCreation - Next Line: 1; 1; b; 2; 3; 3;
 2017-06-26 02:25:30 [main] WARN  test.bibik.project1.maintest.TestMultipleTriangleCreation - The line has incorrect data: 1; 1; b; 2; 3; 3;
 2017-06-26 02:25:30 [main] WARN  test.bibik.project1.maintest.TestMultipleTriangleCreation - Some elements in the line are not Integer  java.lang.NumberFormatException: For input string: "b"
+2017-06-26 08:53:55 [main] INFO  test.bibik.project1.maintest.TestMultipleTriangleCreation - PROGRAM IS RUNNING
+2017-06-26 08:53:55 [main] INFO  test.bibik.project1.maintest.TestMultipleTriangleCreation - 3 line/s were read from file
+2017-06-26 08:53:55 [main] INFO  test.bibik.project1.maintest.TestMultipleTriangleCreation - Next Line: 2; 2; 6; 10; 10; 2;
+2017-06-26 08:53:55 [main] INFO  test.bibik.project1.maintest.TestMultipleTriangleCreation - Triangle has been createdTriangle: PointA [2:2], PointB [6:10], PointC [10:2]
+2017-06-26 08:53:55 [main] INFO  test.bibik.project1.maintest.TestMultipleTriangleCreation - Triangle's parameters have been calculated Area=32.0, Perimeter=25.88854381999832
+2017-06-26 08:53:55 [main] INFO  test.bibik.project1.maintest.TestMultipleTriangleCreation - Triangle has been added to singleton.
+2017-06-26 08:53:55 [main] INFO  test.bibik.project1.maintest.TestMultipleTriangleCreation - Next Line: 1; 1; 2; 2; 3; 3;
+2017-06-26 08:53:55 [main] WARN  test.bibik.project1.maintest.TestMultipleTriangleCreation - Triangle cannot be created.
+2017-06-26 08:53:55 [main] WARN  test.bibik.project1.maintest.TestMultipleTriangleCreation - All point lie on straight line. Triangle cannot be created. null
+2017-06-26 08:53:55 [main] INFO  test.bibik.project1.maintest.TestMultipleTriangleCreation - Next Line: 1; 1; b; 2; 3; 3;
+2017-06-26 08:53:55 [main] WARN  test.bibik.project1.maintest.TestMultipleTriangleCreation - The line has incorrect data: 1; 1; b; 2; 3; 3;
+2017-06-26 08:53:55 [main] WARN  test.bibik.project1.maintest.TestMultipleTriangleCreation - Some elements in the line are not Integer  java.lang.NumberFormatException: For input string: "b"
