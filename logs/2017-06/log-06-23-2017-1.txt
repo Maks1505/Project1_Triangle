@@ -1,0 +1,2 @@
+2017-06-23 16:45:17 [main] INFO  com.bibik.project1.entity.SimpleTriangle - The triangle has been updated. Triangle: PointA [1:1], PointB [3:3], PointC [4:5]
+2017-06-23 16:45:17 [main] INFO  com.bibik.project1.entity.TriangleParameters - Area and Perimeter have been updated. Area=0.9999999999999988, Perimeter=10.06449510224598

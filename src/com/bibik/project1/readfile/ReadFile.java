@@ -10,17 +10,16 @@ import java.util.stream.Stream;
 
 public class ReadFile {
 	
-	public static List<String> readLinesFromFile(String fileName) {
+	public static List<String> readLinesFromFile(String fileName) throws IOException {
 		List<String> fileContent = new ArrayList<>();
 		Stream<String> fileStream = null;
 
 		try {
 			fileStream = Files.lines(Paths.get(fileName));
 			fileContent = fileStream.collect(Collectors.toList());
-
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			throw e;
 		} finally {
 			fileStream.close();
 		}

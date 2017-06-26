@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TriangleListSingleton {
 	private static volatile TriangleListSingleton instance;
-	public ArrayList<Triangle> triangleList = new ArrayList<>();
+	public ArrayList<AbstractTriangle> triangleList = new ArrayList<>();
 	
 	public static TriangleListSingleton getInstance() {
 		TriangleListSingleton localInstance = instance;

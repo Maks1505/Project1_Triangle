@@ -1,8 +1,5 @@
 package com.bibik.project1.entity;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import com.bibik.project1.action.TriangleParametersCalculation;
 import com.bibik.project1.observer.base.Observer;
 
@@ -11,11 +8,9 @@ public class TriangleParameters implements Observer{
 	private double perimeter;
 
 	@Override
-	public void update(Triangle triangle) {
+	public void update(AbstractTriangle triangle) {
 		this.area = TriangleParametersCalculation.calculateTriangleArea(triangle);
 		this.perimeter = TriangleParametersCalculation.calculateTrianglePerimeter(triangle);
-		Logger logger = LogManager.getLogger(TriangleParameters.class);
-		logger.info("Area and Perimeter have been updated. " + this.toString());
 	}
 
 	public double getArea() {

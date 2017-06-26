@@ -2,7 +2,7 @@ package com.bibik.project1.entity;
 
 import com.bibik.project1.observer.base.Observer;
 
-public abstract class Triangle {
+public abstract class AbstractTriangle {
 	public abstract TriangleParameters getTriangleParameters();
 	public abstract void setTriangleParameters(TriangleParameters triangleParameters);
 	public abstract void updatePointA(Point pointA);
